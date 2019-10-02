@@ -1,0 +1,18 @@
+#!/bin/bash
+#SBATCH -A 
+#SBATCH --job-name=Jackhmmer_01
+#SBATCH -c 8
+#SBATCH -t 12:00:00
+#SBATCH --output=jack.slurm.$i.out
+#SBATCH --error=jack.slurm.$i.error
+
+i=$1
+
+~/pfs/jackhmmer/hmmer-3.1b2/bin/jack:hmmer -A Repeat_Dataset/$i.sto -N 5 -E 1e-3 --incE 1e-3 --cpu 8 Repeat_Dataset/$i ~/pfs/databases/uniref90.fasta
+ python /pfs/nobackup/home/m/mircomic/reformat.py Repeat_Dataset/$i.sto Repeat_Dataset/$i.jh3.5.a3m
+
+wait
+sleep 30
+ python ~/pfs/PconsC3-master/extra/arne/MSA/a3mToTrimmed.py Repeat_Dataset/$i.jh3.5.a3m > Repeat_Dataset/$i.jh3.5.t.a3m
+
+                                                  
