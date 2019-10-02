@@ -11,5 +11,5 @@
 
 i=$1
 #if [ ! -f $i.rr ]; then
-python3.6 ~/pfs/Repeats/run_pconsc4.py fasta MSA. a3m output.rr contact_map.pdf
+~/pfs/python35/bin/python3.6  ~/pfs/Repeats/run_pconsc4.py fasta MSA. a3m output.rr contact_map.pdf
 #fi
