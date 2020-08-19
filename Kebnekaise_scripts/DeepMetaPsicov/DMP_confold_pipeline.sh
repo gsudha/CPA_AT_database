@@ -10,7 +10,7 @@
 id=$1  # ID fasta
 
 #Run Deep Meta Psicov
-if [ ! -s $id.fasta.2u.a3m.aln ]; then
+if [ ! -s $id.aln ]; then
 	if [ ! -s $id.DMP ]; then
 		~/cbass/DeepMetaPSICOV/run_DMP.sh -i $id.fasta -o $id.DMP
 		echo "Run Deep Meta Psicov" 
@@ -19,7 +19,7 @@ fi
 
 #Run Deep Meta Psicov with alredy calculate MSA
 if [ ! -s $id.DMP ]; then 
-	~/cbass/DeepMetaPSICOV/run_DMP.sh -i $id.fasta -a $id.fasta.2u.a3m.aln -o $id.DMP
+	~/cbass/DeepMetaPSICOV/run_DMP.sh -i $id.fasta -a $id.aln -o $id.DMP
 	echo "Run Deep Meta Psicov with alredy calculate MSA"
 fi
 
