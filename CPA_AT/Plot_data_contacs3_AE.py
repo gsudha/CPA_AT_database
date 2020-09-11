@@ -11,7 +11,8 @@ print (df)
 #sns.axes_style("darkgrid")
 f, ax = plt.subplots()
 
-ax = sns.heatmap(df, cmap='gist_gray',vmin=1, vmax = 10)
+#ax = sns.heatmap(df, cmap='gist_gray',vmin=1, vmax = 10)
+ax = sns.heatmap(df, cmap='gist_gray',vmin=8, vmax = 10,cbar=False)
 
 Hhelices=[[5,17],[30,46],[63,86],[118,146],[174,195]]
 Hreentrant=[[92,115],[149,168]]
