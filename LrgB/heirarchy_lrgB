@@ -1,0 +1,19 @@
+Topology:8H-Nin
+Superfamily:CPA/AT
+Fold-type: reentrant-helix-reentrant
+Family:Lrg
+Subfamily:LrgB
+N-Scaffold:1-2
+N-core:3-8
+N-repeat:
+C-Scaffold:
+C-core:
+C-repeat:
+Pfam:PF04172
+PDB:
+KRbias-broken/KRbias-reentrant:
+TCDB:
+OPM:
+ECOD:
+CATH:
+
