@@ -1,0 +1,19 @@
+Topology:10H-Nout
+Superfamily:CPA/AT
+Fold-type: reentrant-helix-reentrant
+Family:Lys
+Subfamily:Lys6
+N-Scaffold:1-5
+N-core:6-10
+N-repeat:
+C-Scaffold:
+C-core:
+C-repeat:
+Pfam:PF03956
+PDB:
+KRbias-broken/KRbias-reentrant:
+TCDB:
+OPM:
+ECOD:
+CATH:
+
