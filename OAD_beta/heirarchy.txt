@@ -1,6 +1,6 @@
 Topology:12H-Nout
 Fold-type:6 helical reentrant fold-type
-CPAfold:CPA/AT:OAD_beta:
+CPAfold:CPA/AT:OAD_beta:OAD_beta
 Pfam:CL0064:PF03977:
 TCDB:CPA:3.B.1:
 OPM:32.0:146.0:
