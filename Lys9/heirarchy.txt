@@ -1,6 +1,6 @@
 Topology:10H-Nout
 Fold-type:Reentrant-helix-reentrant
-CPAfold:CPA/AT:Lys:Lys9
+CPAfold:CPA/AT:Lys_export:Lys9_export
 Pfam:::
 TCDB::2.A.124:
 OPM:::
