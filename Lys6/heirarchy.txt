@@ -1,6 +1,6 @@
 Topology:7H-Nout
 Fold-type:Reentrant-helix-reentrant
-CPAfold:CPA/AT:Lys:Lys6
+CPAfold:CPA/AT:Lys_export:Lys6_export
 Pfam:CL0064:PF03956:
 TCDB::2.A.124:
 OPM:::
