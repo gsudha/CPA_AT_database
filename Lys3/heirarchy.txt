@@ -1,6 +1,6 @@
 Topology:3H-Nout
 Fold-type:Reentrant-helix-reentrant
-CPAfold:CPA/AT:Lys:Lys3
+CPAfold:CPA/AT:Lys_export:Lys3_export
 Pfam:::
 TCDB:::
 OPM:::
