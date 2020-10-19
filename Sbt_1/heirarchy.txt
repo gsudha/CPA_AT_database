@@ -1,9 +1,8 @@
-Topology:10H-Nin 
-Superfamily:CPA/AT
+Topology:10H-Nout
 Fold-type:5 helical broken fold-type
-CPAfold:CPA/AT:KdgT:KdgT
-Pfam:CL0064:PF03812:
-TCDB:BART:2.A.10:
+CPAfold:CPA/AT:Sbt_1:Sbt_1
+Pfam:CL0064:PF05982:
+TCDB::2.A.83:
 OPM:::
 ECOD:::
 CATH:::
@@ -14,4 +13,5 @@ N-repeat:1-5
 C-Scaffold:6-7
 C-core:8-10
 C-repeat:6-10
-KRbias-broken/KRbias-reentrant:12.72/4.03
+KRbias-broken/KRbias-reentrant:
+
