@@ -3,7 +3,7 @@ Fold-type:5 helical broken fold-type
 CPAfold:CPA/AT:SBF:SBF_1
 Pfam:CL0064:PF01758:
 TCDB:BART:2.A.28,2.A.59:
-OPM:32.0:142.0:
+OPM:106:369:
 ECOD:Cation-proton antiporter:SBF:
 CATH:1.20.1530.20::
 PDB:4N7W(C4ST46_YERFR),3ZUY(Q9K0A9_NEIMB)

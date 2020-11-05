@@ -3,7 +3,7 @@ Fold-type:6 helical reentrant fold-type
 CPAfold:CPA/AT:2HCT:2HCT
 Pfam::PF03390:
 TCDB::2.A.24:
-OPM:32.0:145.0:
+OPM:106:796:
 ECOD:Sodium dependent citrate symport:2HCT:
 CATH:::
 PDB:5X9R(CITN_KLEPN),5A1S(G4BX92_SALIN)

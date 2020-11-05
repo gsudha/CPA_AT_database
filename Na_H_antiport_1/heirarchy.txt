@@ -3,7 +3,7 @@ Fold-type:7 helical broken fold-type
 CPAfold:CPA/AT:Na_H_antiport_1:Na_H_antiport_1
 Pfam:CL0064:PF06965:
 TCDB::2.A.33:
-OPM:32.0:143.0:
+OPM:106:81:
 ECOD:Cation-proton antiporter:Na_H_antiport_1:
 CATH:1.20.1530.10::
 PDB:1ZCD(NHAA_ECOLI)
