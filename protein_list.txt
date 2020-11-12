@@ -17,7 +17,7 @@ Na_H_Exchanger_2
 OAD_beta
 PSE_1
 PSE_2
-SBF_1
-SBF_2
+Cons_hypoth698_1
+Cons_hypoth698_2
 SBF_like
 Sbt_1
