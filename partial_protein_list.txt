@@ -1,0 +1,8 @@
+LrgA
+LrgAB
+LrgB
+LysA
+LysAB
+LysB
+OAD_beta
+Sbt_1
