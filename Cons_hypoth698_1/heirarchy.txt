@@ -1,5 +1,5 @@
 Topology:11H-Nin
-Fold-type:Reentrant-helix-reentrant
+Fold-type:0 double reentrant fold-type
 CPAfold:CPA/AT:YeiH:YeiH1
 Pfam:CL0064:PF03601:
 TCDB:CPA:2.A.98:
