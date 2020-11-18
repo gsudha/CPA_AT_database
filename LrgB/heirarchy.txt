@@ -1,5 +1,5 @@
 Topology:8H-Nin
-Fold-type:Reentrant-helix-reentrant
+Fold-type:0 double reentrant fold-type
 CPAfold:CPA/AT:Lrg:LrgB
 Pfam::PF04172:
 TCDB::2.A.122:
