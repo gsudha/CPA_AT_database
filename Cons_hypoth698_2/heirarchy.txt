@@ -1,5 +1,5 @@
 Topology:13H-Nin
-Fold-type:Reentrant-helix-reentrant
+Fold-type:0 double reentrant fold-type
 CPAfold:CPA/AT:YeiH:YeiH2
 Pfam:::
 TCDB:::
