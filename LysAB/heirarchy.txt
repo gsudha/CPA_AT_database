@@ -1,5 +1,5 @@
 Topology:10H-Nout
-Fold-type:Reentrant-helix-reentrant
+Fold-type:0 double reentrant fold-type
 CPAfold:CPA/AT:Lys_export:Lys9_export
 Pfam:::
 TCDB::2.A.124:
