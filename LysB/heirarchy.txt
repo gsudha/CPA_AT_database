@@ -1,5 +1,5 @@
 Topology:7H-Nout
-Fold-type:Reentrant-helix-reentrant
+Fold-type:0 double reentrant fold-type
 CPAfold:CPA/AT:Lys_export:Lys6_export
 Pfam:CL0064:PF03956:
 TCDB::2.A.124:
