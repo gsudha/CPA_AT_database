@@ -1,0 +1,4 @@
+N-scaff  1 2 22
+N-scaff  2 24 44
+N-scaff  3 64 84
+N-scaff  4 91 111

@@ -1,0 +1,7 @@
+N-scaff  1 2 22
+N-scaff  2 31 51
+N-core  3 66 86
+N-core  4 93 115
+N-core  5 119 145
+N-core  6 150 171
+N-core  7 175 198

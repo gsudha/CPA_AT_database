@@ -1,0 +1,19 @@
+case (atom.resi>=1 && atom.resi<=1):
+return 0xFFFF80
+case (atom.resi>=2 && atom.resi<=22):
+return 0x800000
+case (atom.resi>=23 && atom.resi<=23):
+return 0x99FFFF
+case (atom.resi>=24 && atom.resi<=44):
+return 0x800000
+case (atom.resi>=45 && atom.resi<=63):
+return 0xFFFF80
+case (atom.resi>=64 && atom.resi<=84):
+return 0x800000
+case (atom.resi>=85 && atom.resi<=90):
+return 0x99FFFF
+case (atom.resi>=91 && atom.resi<=111):
+return 0x800000
+case (atom.resi>=112 && atom.resi<=123):
+return 0xFFFF80
+default: return 'white'

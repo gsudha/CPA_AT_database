@@ -1,0 +1,55 @@
+case (atom.resi>=1 && atom.resi<=14):
+return 0xFFFF80
+case (atom.resi>=15 && atom.resi<=34):
+return 0x800000
+case (atom.resi>=35 && atom.resi<=66):
+return 0x99FFFF
+case (atom.resi>=67 && atom.resi<=88):
+return 0x800000
+case (atom.resi>=89 && atom.resi<=91):
+return 0xFFFF80
+case (atom.resi>=92 && atom.resi<=117):
+return 0x800000
+case (atom.resi>=118 && atom.resi<=138):
+return 0x99FFFF
+case (atom.resi>=139 && atom.resi<=154):
+return 0x800000
+case (atom.resi>=155 && atom.resi<=169):
+return 0xFFFF80
+case (atom.resi>=170 && atom.resi<=191):
+return 0x800000
+case (atom.resi>=192 && atom.resi<=192):
+return 0x99FFFF
+case (atom.resi>=193 && atom.resi<=220):
+return 0x6495ED
+case (atom.resi>=221 && atom.resi<=228):
+return 0xFFFF80
+case (atom.resi>=229 && atom.resi<=252):
+return 0x6495ED
+case (atom.resi>=253 && atom.resi<=258):
+return 0xFFFF80
+case (atom.resi>=259 && atom.resi<=285):
+return 0x6495ED
+case (atom.resi>=286 && atom.resi<=288):
+return 0x99FFFF
+case (atom.resi>=289 && atom.resi<=325):
+return 0x6495ED
+case (atom.resi>=326 && atom.resi<=333):
+return 0x99FFFF
+case (atom.resi>=334 && atom.resi<=363):
+return 0x6495ED
+case (atom.resi>=364 && atom.resi<=381):
+return 0xFFFF80
+case (atom.resi>=382 && atom.resi<=407):
+return 0x800000
+case (atom.resi>=408 && atom.resi<=423):
+return 0x99FFFF
+case (atom.resi>=424 && atom.resi<=442):
+return 0x800000
+case (atom.resi>=443 && atom.resi<=454):
+return 0xFFFF80
+case (atom.resi>=455 && atom.resi<=481):
+return 0x6495ED
+case (atom.resi>=482 && atom.resi<=488):
+return 0x99FFFF
+default: return 'white'
