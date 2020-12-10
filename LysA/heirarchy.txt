@@ -7,11 +7,11 @@ OPM:::
 ECOD:::
 CATH:::
 PDB:
-N-Scaffold:1-3
+N-Scaffold:
 N-core:
 N-repeat:
-C-Scaffold:
-C-core:
+C-Scaffold:1-2
+C-core:3
 C-repeat:
 KRbias-broken/KRbias-reentrant:
 
