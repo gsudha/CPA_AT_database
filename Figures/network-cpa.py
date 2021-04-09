@@ -37,26 +37,29 @@ df
 df["logEvalue"]=np.log(df.evalue)
 
 
-# In[5]:
+# In[74]:
 
 
-df
+df=df.replace("cons1_r1","PSE1_r1")
+df=df.replace("cons1_r2","PSE1_r2")
+df=df.replace("cons2_r1","PSE2_r1")
+df=df.replace("cons2_r2","PSE2_r2")
 
 
-# In[6]:
+# In[75]:
 
 
 sbn.scatterplot(data=df,x="logEvalue",y="probability")
 
 
-# In[7]:
+# In[76]:
 
 
 tempdf=df[df.probability>95]
 len(tempdf)
 
 
-# In[8]:
+# In[77]:
 
 
 tempdf=df[df.evalue<0.001]
@@ -69,13 +72,13 @@ len(tempdf)
 
 
 
-# In[9]:
+# In[78]:
 
 
 G=nx.from_pandas_edgelist(tempdf,source="repeat1",target="repeat2",edge_attr="score")
 
 
-# In[10]:
+# In[79]:
 
 
 nx.draw_networkx(G)
@@ -87,43 +90,47 @@ nx.draw_networkx(G)
 
 
 
-# In[11]:
+# In[80]:
 
 
 tempdf[tempdf.evalue>0.001]
 
 
-# In[12]:
+# In[81]:
 
 
 nodes=tempdf.repeat1.unique()
 nodes
 
 
-# In[13]:
+# In[88]:
 
 
 
 colordict={
-"abrb_r1":"forestgreen",
+"abrb_r1":"limegreen",
 "abrb_r2":"green",
 "antiport_r1":"tomato",
 "antiport_r2":"red",
-"asp_r1":"forestgreen",
+"asp_r1":"limegreen",
 "asp_r2":"green",
 "cons1_r1":"royalblue",
 "cons1_r2":"blue",
 "cons2_r1":"royalblue",
 "cons2_r2":"blue",
-"duf819_r1":"forestgreen",
+"PSE1_r1":"royalblue",
+"PSE1_r2":"blue",
+"PSE2_r1":"royalblue",
+"PSE2_r2":"blue",
+"duf819_r1":"limegreen",
 "duf819_r2":"green",
-"ex1_r1":"tomato",
+"ex1_r1":"salmon",
 "ex1_r2":"red",
-"ex2_r1":"tomato",
+"ex2_r1":"salmon",
 "ex2_r2":"red",
-"glt_r1":"forestgreen",
+"glt_r1":"limegreen",
 "glt_r2":"green",
-"hct_r1":"forestgreen",
+"hct_r1":"limegreen",
 "hct_r2":"green",
 "kdgt_r1":"magenta",
 "kdgt_r2":"purple",
@@ -138,7 +145,7 @@ colordict={
 "lysb_r1":"royalblue",
 "mt10_r1":"magenta",
 "mt10_r2":"purple",
-"oad_r1":"forestgreen",
+"oad_r1":"limegreen",
 "oad_r2":"green",
 "sbf10_r1":"magenta",
 "sbf10_r2":"purple",
@@ -151,24 +158,24 @@ colordict={
 }
 
 
-# In[85]:
+# In[94]:
 
 
 #cutoff=99
 #tempdf=df[df.probability>cutoff]
-tempdf=df[df.evalue<0.1]
+tempdf=df[df.evalue<0.01]
 #tempdf=df
 G=nx.from_pandas_edgelist(tempdf,source="repeat1",target="repeat2",edge_attr="evalue")
 
 
-# In[86]:
+# In[95]:
 
 
 net=Network(notebook=True,height='400px', width='100%',)
 net.from_nx(G)
 
 
-# In[87]:
+# In[96]:
 
 
 for n in net.nodes:
@@ -176,9 +183,10 @@ for n in net.nodes:
     n["title"] = n["label"]
     n["color"] = colordict[n["label"]]
     n["font.size"] = 28
+    n["borderWidth"]=20
 
 
-# In[90]:
+# In[97]:
 
 
 for e in net.edges:
@@ -202,19 +210,25 @@ for e in net.edges:
         #e["value"]=e["score"]
     if not colordict[e["from"]]==colordict[e["to"]]:
         e["color"]="black"
-    else:
-        e["color"]="grey"
+    #else:
+    #    e["color"]="grey"
     #e["physics"]=True
 
 
-# In[91]:
+# In[ ]:
+
+
+
+
+
+# In[98]:
 
 
 net.show_buttons(filter_=['physics'])
 net.show("network.html")
 
 
-# In[93]:
+# In[101]:
 
 
 net.save_graph("network-graph.html")
@@ -223,7 +237,16 @@ net.save_graph("network-graph.html")
 # In[ ]:
 
 
-
+net.set_options('''
+var options = 
+  "physics": {
+    "forceAtlas2Based": {
+      "springLength": 100
+    },
+    "minVelocity": 0.75,
+    "solver": "forceAtlas2Based"
+  }
+''')
 
 
 # In[ ]:

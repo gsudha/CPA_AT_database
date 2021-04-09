@@ -1,0 +1,123 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis.css" type="text/css" />
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis-network.min.js"> </script>
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+
+<style type="text/css">
+
+        #mynetwork {
+            width: 100%;
+            height: 1200px;
+            background-color: #ffffff;
+            border: 1px solid lightgray;
+            position: relative;
+            float: left;
+        }
+
+        
+
+        
+        #config {
+            float: left;
+            width: 400px;
+            height: 600px;
+        }
+        
+
+        
+</style>
+
+</head>
+
+<body>
+<div id = "mynetwork"></div>
+
+
+<div id = "config"></div>
+
+<script type="text/javascript">
+
+    // initialize global variables.
+    var edges;
+    var nodes;
+    var network; 
+    var container;
+    var options, data;
+
+    
+    // This method is responsible for drawing the graph, returns the drawn network
+    function drawGraph() {
+        var container = document.getElementById('mynetwork');
+        
+        
+
+        // parsing and collecting nodes and edges from the python
+        nodes = new vis.DataSet([{"borderWidth": 20, "color": "green", "font": "36px Arial black", "font.size": 28, "id": "abrb_r1", "label": "abrb_r1", "shape": "dot", "size": 10, "title": "abrb_r1"}, {"borderWidth": 20, "color": "green", "font": "36px Arial black", "font.size": 28, "id": "abrb_r2", "label": "abrb_r2", "shape": "diamond", "shapte": "diamond", "size": 10, "title": "abrb_r2"}, {"borderWidth": 20, "color": "green", "font": "36px Arial black", "font.size": 28, "id": "glt_r1", "label": "glt_r1", "shape": "dot", "size": 10, "title": "glt_r1"}, {"borderWidth": 20, "color": "green", "font": "36px Arial black", "font.size": 28, "id": "glt_r2", "label": "glt_r2", "shape": "diamond", "shapte": "diamond", "size": 10, "title": "glt_r2"}, {"borderWidth": 20, "color": "magenta", "font": "36px Arial black", "font.size": 28, "id": "sbf10_r1", "label": "sbf10_r1", "shape": "dot", "size": 10, "title": "sbf10_r1"}, {"borderWidth": 20, "color": "green", "font": "36px Arial black", "font.size": 28, "id": "hct_r2", "label": "hct_r2", "shape": "diamond", "shapte": "diamond", "size": 10, "title": "hct_r2"}, {"borderWidth": 20, "color": "blue", "font": "36px Arial black", "font.size": 28, "id": "PSE1_r1", "label": "PSE1_r1", "shape": "dot", "size": 10, "title": "PSE1_r1"}, {"borderWidth": 20, "color": "blue", "font": "36px Arial black", "font.size": 28, "id": "PSE2_r1", "label": "PSE2_r1", "shape": "dot", "size": 10, "title": "PSE2_r1"}, {"borderWidth": 20, "color": "green", "font": "36px Arial black", "font.size": 28, "id": "duf819_r1", "label": "duf819_r1", "shape": "dot", "size": 10, "title": "duf819_r1"}, {"borderWidth": 20, "color": "green", "font": "36px Arial black", "font.size": 28, "id": "duf819_r2", "label": "duf819_r2", "shape": "diamond", "shapte": "diamond", "size": 10, "title": "duf819_r2"}, {"borderWidth": 20, "color": "green", "font": "36px Arial black", "font.size": 28, "id": "hct_r1", "label": "hct_r1", "shape": "dot", "size": 10, "title": "hct_r1"}, {"borderWidth": 20, "color": "magenta", "font": "36px Arial black", "font.size": 28, "id": "mt10_r2", "label": "mt10_r2", "shape": "diamond", "shapte": "diamond", "size": 10, "title": "mt10_r2"}, {"borderWidth": 20, "color": "magenta", "font": "36px Arial black", "font.size": 28, "id": "sbflike_r1", "label": "sbflike_r1", "shape": "dot", "size": 10, "title": "sbflike_r1"}, {"borderWidth": 20, "color": "magenta", "font": "36px Arial black", "font.size": 28, "id": "sbf9_r1", "label": "sbf9_r1", "shape": "dot", "size": 10, "title": "sbf9_r1"}, {"borderWidth": 20, "color": "red", "font": "36px Arial black", "font.size": 28, "id": "antiport_r1", "label": "antiport_r1", "shape": "dot", "size": 10, "title": "antiport_r1"}, {"borderWidth": 20, "color": "red", "font": "36px Arial black", "font.size": 28, "id": "antiport_r2", "label": "antiport_r2", "shape": "diamond", "shapte": "diamond", "size": 10, "title": "antiport_r2"}, {"borderWidth": 20, "color": "red", "font": "36px Arial black", "font.size": 28, "id": "ex1_r2", "label": "ex1_r2", "shape": "diamond", "shapte": "diamond", "size": 10, "title": "ex1_r2"}, {"borderWidth": 20, "color": "red", "font": "36px Arial black", "font.size": 28, "id": "ex2_r2", "label": "ex2_r2", "shape": "diamond", "shapte": "diamond", "size": 10, "title": "ex2_r2"}, {"borderWidth": 20, "color": "green", "font": "36px Arial black", "font.size": 28, "id": "asp_r1", "label": "asp_r1", "shape": "dot", "size": 10, "title": "asp_r1"}, {"borderWidth": 20, "color": "blue", "font": "36px Arial black", "font.size": 28, "id": "lysab_r1", "label": "lysab_r1", "shape": "dot", "size": 10, "title": "lysab_r1"}, {"borderWidth": 20, "color": "magenta", "font": "36px Arial black", "font.size": 28, "id": "sbt1_r2", "label": "sbt1_r2", "shape": "diamond", "shapte": "diamond", "size": 10, "title": "sbt1_r2"}, {"borderWidth": 20, "color": "green", "font": "36px Arial black", "font.size": 28, "id": "asp_r2", "label": "asp_r2", "shape": "diamond", "shapte": "diamond", "size": 10, "title": "asp_r2"}, {"borderWidth": 20, "color": "blue", "font": "36px Arial black", "font.size": 28, "id": "lysab_r2", "label": "lysab_r2", "shape": "diamond", "shapte": "diamond", "size": 10, "title": "lysab_r2"}, {"borderWidth": 20, "color": "blue", "font": "36px Arial black", "font.size": 28, "id": "lysa_r1", "label": "lysa_r1", "shape": "dot", "size": 10, "title": "lysa_r1"}, {"borderWidth": 20, "color": "blue", "font": "36px Arial black", "font.size": 28, "id": "lysb_r1", "label": "lysb_r1", "shape": "dot", "size": 10, "title": "lysb_r1"}, {"borderWidth": 20, "color": "salmon", "font": "36px Arial black", "font.size": 28, "id": "ex1_r1", "label": "ex1_r1", "shape": "dot", "size": 10, "title": "ex1_r1"}, {"borderWidth": 20, "color": "magenta", "font": "36px Arial black", "font.size": 28, "id": "kdgt_r2", "label": "kdgt_r2", "shape": "diamond", "shapte": "diamond", "size": 10, "title": "kdgt_r2"}, {"borderWidth": 20, "color": "salmon", "font": "36px Arial black", "font.size": 28, "id": "ex2_r1", "label": "ex2_r1", "shape": "dot", "size": 10, "title": "ex2_r1"}, {"borderWidth": 20, "color": "blue", "font": "36px Arial black", "font.size": 28, "id": "PSE1_r2", "label": "PSE1_r2", "shape": "diamond", "shapte": "diamond", "size": 10, "title": "PSE1_r2"}, {"borderWidth": 20, "color": "blue", "font": "36px Arial black", "font.size": 28, "id": "PSE2_r2", "label": "PSE2_r2", "shape": "diamond", "shapte": "diamond", "size": 10, "title": "PSE2_r2"}, {"borderWidth": 20, "color": "magenta", "font": "36px Arial black", "font.size": 28, "id": "kdgt_r1", "label": "kdgt_r1", "shape": "dot", "size": 10, "title": "kdgt_r1"}, {"borderWidth": 20, "color": "blue", "font": "36px Arial black", "font.size": 28, "id": "lrgab_r1", "label": "lrgab_r1", "shape": "dot", "size": 10, "title": "lrgab_r1"}, {"borderWidth": 20, "color": "blue", "font": "36px Arial black", "font.size": 28, "id": "lrga_r1", "label": "lrga_r1", "shape": "dot", "size": 10, "title": "lrga_r1"}, {"borderWidth": 20, "color": "blue", "font": "36px Arial black", "font.size": 28, "id": "lrgb_r1", "label": "lrgb_r1", "shape": "dot", "size": 10, "title": "lrgb_r1"}, {"borderWidth": 20, "color": "blue", "font": "36px Arial black", "font.size": 28, "id": "lrgab_r2", "label": "lrgab_r2", "shape": "diamond", "shapte": "diamond", "size": 10, "title": "lrgab_r2"}, {"borderWidth": 20, "color": "blue", "font": "36px Arial black", "font.size": 28, "id": "lrgb_r2", "label": "lrgb_r2", "shape": "diamond", "shapte": "diamond", "size": 10, "title": "lrgb_r2"}, {"borderWidth": 20, "color": "magenta", "font": "36px Arial black", "font.size": 28, "id": "mt10_r1", "label": "mt10_r1", "shape": "dot", "size": 10, "title": "mt10_r1"}, {"borderWidth": 20, "color": "magenta", "font": "36px Arial black", "font.size": 28, "id": "sbf10_r2", "label": "sbf10_r2", "shape": "diamond", "shapte": "diamond", "size": 10, "title": "sbf10_r2"}, {"borderWidth": 20, "color": "magenta", "font": "36px Arial black", "font.size": 28, "id": "sbflike_r2", "label": "sbflike_r2", "shape": "diamond", "shapte": "diamond", "size": 10, "title": "sbflike_r2"}, {"borderWidth": 20, "color": "green", "font": "36px Arial black", "font.size": 28, "id": "oad_r1", "label": "oad_r1", "shape": "dot", "size": 10, "title": "oad_r1"}, {"borderWidth": 20, "color": "green", "font": "36px Arial black", "font.size": 28, "id": "oad_r2", "label": "oad_r2", "shape": "diamond", "shapte": "diamond", "size": 10, "title": "oad_r2"}, {"borderWidth": 20, "color": "magenta", "font": "36px Arial black", "font.size": 28, "id": "sbf9_r2", "label": "sbf9_r2", "shape": "diamond", "shapte": "diamond", "size": 10, "title": "sbf9_r2"}, {"borderWidth": 20, "color": "magenta", "font": "36px Arial black", "font.size": 28, "id": "sbt1_r1", "label": "sbt1_r1", "shape": "dot", "size": 10, "title": "sbt1_r1"}]);
+        edges = new vis.DataSet([{"evalue": 6.900000000000001e-28, "from": "abrb_r1", "hidden": true, "to": "abrb_r1", "value": 0, "weight": 1}, {"evalue": 2.2e-32, "from": "abrb_r1", "to": "abrb_r2", "value": 3, "weight": 1}, {"evalue": 6.4e-05, "from": "abrb_r1", "to": "glt_r1", "value": 2, "weight": 1}, {"evalue": 2.9999999999999997e-05, "from": "abrb_r1", "to": "glt_r2", "value": 2, "weight": 1}, {"color": "black", "evalue": 0.0074, "from": "abrb_r1", "to": "sbf10_r1", "value": 0.1, "weight": 1}, {"evalue": 1.1999999999999999e-32, "from": "abrb_r2", "hidden": true, "to": "abrb_r2", "value": 0, "weight": 1}, {"evalue": 4.1e-05, "from": "abrb_r2", "to": "glt_r1", "value": 2, "weight": 1}, {"evalue": 4.8e-05, "from": "abrb_r2", "to": "glt_r2", "value": 2, "weight": 1}, {"evalue": 0.0064, "from": "abrb_r2", "to": "hct_r2", "value": 0.1, "weight": 1}, {"color": "black", "evalue": 4.3e-05, "from": "glt_r1", "to": "PSE1_r1", "value": 2, "weight": 1}, {"color": "black", "evalue": 0.0008699999999999999, "from": "glt_r1", "to": "PSE2_r1", "value": 1, "weight": 1}, {"evalue": 3.5e-11, "from": "glt_r1", "to": "duf819_r1", "value": 3, "weight": 1}, {"evalue": 1.1e-11, "from": "glt_r1", "to": "duf819_r2", "value": 3, "weight": 1}, {"evalue": 5.6e-22, "from": "glt_r1", "hidden": true, "to": "glt_r1", "value": 0, "weight": 1}, {"evalue": 0.00022, "from": "glt_r1", "to": "glt_r2", "value": 1, "weight": 1}, {"evalue": 1.1e-14, "from": "glt_r1", "to": "hct_r1", "value": 3, "weight": 1}, {"evalue": 0.00025, "from": "glt_r1", "to": "hct_r2", "value": 1, "weight": 1}, {"color": "black", "evalue": 0.0009, "from": "glt_r2", "to": "PSE1_r1", "value": 1, "weight": 1}, {"evalue": 2.7e-08, "from": "glt_r2", "to": "duf819_r2", "value": 3, "weight": 1}, {"evalue": 1.1999999999999999e-19, "from": "glt_r2", "hidden": true, "to": "glt_r2", "value": 0, "weight": 1}, {"evalue": 1.4e-11, "from": "glt_r2", "to": "hct_r2", "value": 3, "weight": 1}, {"evalue": 5.2e-15, "from": "sbf10_r1", "to": "mt10_r2", "value": 3, "weight": 1}, {"evalue": 1.9999999999999998e-15, "from": "sbf10_r1", "hidden": true, "to": "sbf10_r1", "value": 0, "weight": 1}, {"evalue": 9.1e-17, "from": "sbf10_r1", "to": "sbflike_r1", "value": 3, "weight": 1}, {"evalue": 6.6e-16, "from": "sbf10_r1", "to": "sbf9_r1", "value": 3, "weight": 1}, {"color": "black", "evalue": 0.0017, "from": "hct_r2", "to": "PSE1_r1", "value": 0.1, "weight": 1}, {"evalue": 1.7e-13, "from": "hct_r2", "to": "duf819_r2", "value": 3, "weight": 1}, {"evalue": 0.0018, "from": "hct_r2", "to": "hct_r1", "value": 0.1, "weight": 1}, {"evalue": 1.0000000000000001e-29, "from": "hct_r2", "hidden": true, "to": "hct_r2", "value": 0, "weight": 1}, {"evalue": 4.5e-61, "from": "antiport_r1", "hidden": true, "to": "antiport_r1", "value": 0, "weight": 1}, {"evalue": 3.8e-59, "from": "antiport_r2", "hidden": true, "to": "antiport_r2", "value": 0, "weight": 1}, {"evalue": 0.0085, "from": "antiport_r2", "to": "ex1_r2", "value": 0.1, "weight": 1}, {"evalue": 0.0059, "from": "antiport_r2", "to": "ex2_r2", "value": 0.1, "weight": 1}, {"color": "black", "evalue": 0.0002, "from": "ex1_r2", "to": "duf819_r2", "value": 1, "weight": 1}, {"evalue": 3.5e-15, "from": "ex1_r2", "hidden": true, "to": "ex1_r2", "value": 0, "weight": 1}, {"evalue": 2.5e-16, "from": "ex1_r2", "to": "ex2_r2", "value": 3, "weight": 1}, {"evalue": 6.500000000000001e-38, "from": "asp_r1", "hidden": true, "to": "asp_r1", "value": 0, "weight": 1}, {"color": "black", "evalue": 0.0065, "from": "asp_r1", "to": "lysab_r1", "value": 0.1, "weight": 1}, {"color": "black", "evalue": 0.006999999999999999, "from": "asp_r1", "to": "sbt1_r2", "value": 0.1, "weight": 1}, {"evalue": 9.6e-37, "from": "asp_r1", "to": "asp_r2", "value": 3, "weight": 1}, {"color": "black", "evalue": 0.0099, "from": "lysab_r1", "to": "asp_r2", "value": 0.1, "weight": 1}, {"evalue": 0.0012, "from": "lysab_r1", "to": "PSE1_r1", "value": 0.1, "weight": 1}, {"evalue": 2e-14, "from": "lysab_r1", "hidden": true, "to": "lysab_r1", "value": 0, "weight": 1}, {"evalue": 5.6999999999999996e-58, "from": "lysab_r1", "to": "lysab_r2", "value": 3, "weight": 1}, {"evalue": 1.2e-14, "from": "lysab_r1", "to": "lysa_r1", "value": 3, "weight": 1}, {"evalue": 2.2000000000000003e-59, "from": "lysab_r1", "to": "lysb_r1", "value": 3, "weight": 1}, {"evalue": 2.8e-61, "from": "sbt1_r2", "hidden": true, "to": "sbt1_r2", "value": 0, "weight": 1}, {"evalue": 6.2e-38, "from": "PSE1_r1", "hidden": true, "to": "PSE1_r1", "value": 0, "weight": 1}, {"color": "black", "evalue": 0.0017, "from": "PSE1_r1", "to": "duf819_r1", "value": 0.1, "weight": 1}, {"color": "black", "evalue": 0.00015, "from": "PSE1_r1", "to": "duf819_r2", "value": 1, "weight": 1}, {"color": "black", "evalue": 3.6e-07, "from": "PSE1_r1", "to": "hct_r1", "value": 3, "weight": 1}, {"evalue": 7.2e-30, "from": "PSE1_r1", "to": "PSE2_r1", "value": 3, "weight": 1}, {"color": "black", "evalue": 0.0012, "from": "PSE1_r1", "to": "ex1_r1", "value": 0.1, "weight": 1}, {"color": "black", "evalue": 0.0068, "from": "PSE1_r1", "to": "ex2_r2", "value": 0.1, "weight": 1}, {"color": "black", "evalue": 6.7e-05, "from": "PSE1_r1", "to": "kdgt_r2", "value": 2, "weight": 1}, {"color": "black", "evalue": 0.0027, "from": "PSE1_r1", "to": "mt10_r2", "value": 0.1, "weight": 1}, {"evalue": 1.6e-18, "from": "duf819_r1", "hidden": true, "to": "duf819_r1", "value": 0, "weight": 1}, {"evalue": 1.1e-13, "from": "duf819_r1", "to": "hct_r1", "value": 3, "weight": 1}, {"color": "black", "evalue": 1.7000000000000001e-09, "from": "duf819_r1", "to": "ex1_r1", "value": 3, "weight": 1}, {"color": "black", "evalue": 2.2e-09, "from": "duf819_r1", "to": "ex2_r1", "value": 3, "weight": 1}, {"evalue": 3.4999999999999996e-21, "from": "duf819_r2", "hidden": true, "to": "duf819_r2", "value": 0, "weight": 1}, {"color": "black", "evalue": 1.7e-05, "from": "duf819_r2", "to": "ex2_r2", "value": 2, "weight": 1}, {"color": "black", "evalue": 0.00037, "from": "hct_r1", "to": "PSE2_r1", "value": 1, "weight": 1}, {"color": "black", "evalue": 0.00045999999999999996, "from": "hct_r1", "to": "ex1_r1", "value": 1, "weight": 1}, {"color": "black", "evalue": 0.00043, "from": "hct_r1", "to": "ex2_r1", "value": 1, "weight": 1}, {"evalue": 3e-27, "from": "hct_r1", "hidden": true, "to": "hct_r1", "value": 0, "weight": 1}, {"evalue": 1.1e-33, "from": "PSE1_r2", "hidden": true, "to": "PSE1_r2", "value": 0, "weight": 1}, {"evalue": 1.7000000000000001e-29, "from": "PSE1_r2", "to": "PSE2_r2", "value": 3, "weight": 1}, {"color": "black", "evalue": 0.0016, "from": "PSE2_r1", "to": "kdgt_r2", "value": 0.1, "weight": 1}, {"color": "black", "evalue": 0.0039, "from": "kdgt_r2", "to": "ex2_r2", "value": 0.1, "weight": 1}, {"evalue": 9e-05, "from": "kdgt_r2", "to": "kdgt_r1", "value": 2, "weight": 1}, {"evalue": 1.5e-49, "from": "kdgt_r2", "hidden": true, "to": "kdgt_r2", "value": 0, "weight": 1}, {"evalue": 6.3e-20, "from": "ex1_r1", "hidden": true, "to": "ex1_r1", "value": 0, "weight": 1}, {"evalue": 3.7e-17, "from": "ex1_r1", "to": "ex2_r1", "value": 3, "weight": 1}, {"evalue": 4e-53, "from": "kdgt_r1", "hidden": true, "to": "kdgt_r1", "value": 0, "weight": 1}, {"evalue": 5.299999999999999e-16, "from": "lrgab_r1", "to": "lrga_r1", "value": 3, "weight": 1}, {"evalue": 1.5e-25, "from": "lrga_r1", "hidden": true, "to": "lrga_r1", "value": 0, "weight": 1}, {"evalue": 0.0038, "from": "lrga_r1", "to": "lrgb_r1", "value": 0.1, "weight": 1}, {"evalue": 1.3e-14, "from": "lrgab_r2", "to": "lrgb_r2", "value": 3, "weight": 1}, {"evalue": 1.3999999999999999e-14, "from": "lrgb_r2", "hidden": true, "to": "lrgb_r2", "value": 0, "weight": 1}, {"evalue": 1.1999999999999999e-46, "from": "lrgb_r1", "hidden": true, "to": "lrgb_r1", "value": 0, "weight": 1}, {"evalue": 5.7000000000000005e-18, "from": "mt10_r1", "hidden": true, "to": "mt10_r1", "value": 0, "weight": 1}, {"evalue": 1.4999999999999999e-05, "from": "mt10_r1", "to": "sbf10_r2", "value": 2, "weight": 1}, {"evalue": 0.00011999999999999999, "from": "mt10_r1", "to": "sbflike_r2", "value": 1, "weight": 1}, {"evalue": 4.4e-21, "from": "mt10_r2", "hidden": true, "to": "mt10_r2", "value": 0, "weight": 1}, {"evalue": 5.4e-15, "from": "mt10_r2", "to": "sbf9_r1", "value": 3, "weight": 1}, {"evalue": 1.8000000000000002e-16, "from": "mt10_r2", "to": "sbflike_r1", "value": 3, "weight": 1}, {"evalue": 1.3e-29, "from": "oad_r1", "hidden": true, "to": "oad_r1", "value": 0, "weight": 1}, {"evalue": 1.4999999999999998e-43, "from": "oad_r2", "hidden": true, "to": "oad_r2", "value": 0, "weight": 1}, {"evalue": 1.3999999999999999e-14, "from": "sbflike_r1", "to": "sbf9_r1", "value": 3, "weight": 1}, {"evalue": 7.5e-17, "from": "sbflike_r1", "hidden": true, "to": "sbflike_r1", "value": 0, "weight": 1}, {"evalue": 9.6e-06, "from": "sbf10_r2", "hidden": true, "to": "sbf10_r2", "value": 0, "weight": 1}, {"evalue": 4.4e-17, "from": "sbf10_r2", "to": "sbflike_r2", "value": 3, "weight": 1}, {"evalue": 0.00084, "from": "sbf10_r2", "to": "sbf9_r2", "value": 1, "weight": 1}, {"evalue": 3.2e-16, "from": "sbflike_r2", "to": "sbf9_r2", "value": 3, "weight": 1}, {"evalue": 6.2e-19, "from": "sbflike_r2", "hidden": true, "to": "sbflike_r2", "value": 0, "weight": 1}, {"evalue": 2.8999999999999996e-49, "from": "sbt1_r1", "hidden": true, "to": "sbt1_r1", "value": 0, "weight": 1}]);
+
+        // adding nodes and edges to the graph
+        data = {nodes: nodes, edges: edges};
+
+        var options = {
+    "configure": {
+        "enabled": true,
+        "filter": [
+            "physics"
+        ]
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": false,
+            "type": "continuous"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+        
+        
+
+        
+        // if this network requires displaying the configure window,
+        // put it in its div
+        options.configure["container"] = document.getElementById("config");
+        
+
+        network = new vis.Network(container, data, options);
+	 
+        
+
+
+        
+
+        return network;
+
+    }
+
+    drawGraph();
+
+</script>
+</body>
+</html>
