@@ -1,11 +1,15 @@
+Family:Asp-Al_Ex
+Fold-type:CPA-reentrant fold 
 Topology:12H-Nout 
-Fold-type:6 helical reentrant fold-type
-CPAfold:CPA/AT:Asp-Al_Ex:Asp-Al_Ex
-Pfam:CL0064:PF06826:
-TCDB:CPA:2.A.81:
-OPM:::
-ECOD:::
-CATH:::
+Pfam family:Asp-Al_Ex
+Pfam clan:CPA_AT 
+TCDB family:The Aspartate:Alanine Exchanger (AAEx) Family
+TCDB superfamily:CPA Superfamily
+OPM family:
+OPM superfamily:
+ECOD family:
+ECOD superfamily:
+CATH family:
 PDB:
 N-Scaffold:1-3
 N-core:4-6
