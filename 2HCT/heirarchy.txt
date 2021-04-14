@@ -1,6 +1,6 @@
 Topology:13H-Nin
 Fold-type:CPA-reentrant fold 
-CPA:2HCT:2HCT
+2HCT:CPA-reentrant fold:13H-Nin:2HCT:CPA_AT:The 2-Hydroxycarboxylate Transporter (2-HCT) Family:
 Pfam::PF03390:
 TCDB::2.A.24:
 OPM:106:796:
