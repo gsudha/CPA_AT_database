@@ -1,12 +1,15 @@
+Family:Glt_symporter
+Fold-type: CPA-reentrant fold
 Topology:12H-Nout 
-Superfamily:CPA/AT
-Fold-type:6 helical reentrant fold-type
-CPAfold:CPA/AT:Glt_symporter:Glt_symporter
-Pfam:CL0064:PF03616:
-TCDB:CPA:2.A.27:
-OPM:::
-ECOD:::
-CATH:::
+Pfam family:Glt_symporter
+Pfam clan:CPA_AT
+TCDB family:The Glutamate:Na+ Symporter (ESS) Family
+TCDB superfamily:CPA Superfamily
+OPM family: 
+OPM superfamily:
+ECOD family:
+ECOD superfamily:
+CATH family:
 PDB:
 N-Scaffold:1-3
 N-core:4-6
