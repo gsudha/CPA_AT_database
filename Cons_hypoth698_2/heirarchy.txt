@@ -1,11 +1,15 @@
+Family:PSE_2
+Fold-type:Reentrant-helix-reentrant fold
 Topology:13H-Nin
-Fold-type:RHR fold
-CPAfold:::
-Pfam:::
-TCDB:::
-OPM:::
-ECOD:::
-CATH:::
+Pfam family:
+Pfam clan:
+TCDB family:
+TCDB superfamily:
+OPM family: 
+OPM superfamily:
+ECOD family:
+ECOD superfamily:
+CATH family:
 PDB:
 N-Scaffold:1-5
 N-core:6-10
