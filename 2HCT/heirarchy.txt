@@ -7,8 +7,8 @@ TCDB family:The 2-Hydroxycarboxylate Transporter (2-HCT) Family
 TCDB superfamily:
 OPM family:Hydroxycarboxylate transporter 
 OPM superfamily:Monovalent cation-proton antiporter
-ECOD superfamily:Sodium dependent citrate symport
 ECOD family:2HCT
+ECOD superfamily:Sodium dependent citrate symport
 CATH family:
 PDB:5X9R(CITN_KLEPN),5A1S(G4BX92_SALIN)
 N-Scaffold:1-4
