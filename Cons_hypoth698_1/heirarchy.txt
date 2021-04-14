@@ -1,6 +1,6 @@
 Topology:11H-Nin
-Fold-type:RHR fold
-CPAfold:CPA:Cons_hypoth698:
+Fold-type:Reentrant-helix-reentrant fold
+CPA:Cons_hypoth698:PSE_1
 Pfam:CL0064:PF03601:
 TCDB:CPA:2.A.98:
 OPM:
