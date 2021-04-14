@@ -1,11 +1,15 @@
+Family:PSE_1
+Fold-type:Reentrant-helix-reentrant fold 
 Topology:11H-Nin
-Fold-type:Reentrant-helix-reentrant fold
-CPA:Cons_hypoth698:PSE_1
-Pfam:CL0064:PF03601:
-TCDB:CPA:2.A.98:
-OPM:
-ECOD:
-CATH:
+Pfam family:Cons_hypoth698
+Pfam clan:CPA_AT
+TCDB family:The Putative Sulfate Exporter (PSE) Family
+TCDB superfamily:CPA Superfamily
+OPM family:
+OPM superfamily:
+ECOD family:
+ECOD superfamily:
+CATH family:
 PDB:
 N-Scaffold:1-3
 N-core:4-8
