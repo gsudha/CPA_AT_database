@@ -1,12 +1,15 @@
+Family:KdgT
+Fold-type:BART-fold
 Topology:10H-Nin 
-Superfamily:CPA/AT
-Fold-type:5 helical broken fold-type
-CPAfold:CPA/AT:KdgT:KdgT
-Pfam:CL0064:PF03812:
-TCDB:BART:2.A.10:
-OPM:::
-ECOD:::
-CATH:::
+Pfam family:KdgT
+Pfam clan:CPA_AT
+TCDB family:The 2-Keto-3-Deoxygluconate Transporter (KdgT) Family
+TCDB superfamily:BART Superfamily
+OPM family: 
+OPM superfamily:
+ECOD family:
+ECOD superfamily:
+CATH family:
 PDB:
 N-Scaffold:1-2
 N-core:3-5
