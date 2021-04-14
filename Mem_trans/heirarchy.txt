@@ -1,12 +1,15 @@
+Family:Mem_trans
+Fold-type:BART-fold
 Topology:10H-Nout 
-Superfamily:CPA/AT
-Fold-type:5 helical broken fold-type
-CPAfold:CPA/AT:Mem_trans:Mem_trans
-Pfam:CL0064:PF03547:
-TCDB:BART:2.A.69:
-OPM:::
-ECOD:::
-CATH:::
+Pfam family:Mem_trans
+Pfam clan:CPA_AT
+TCDB family:The Auxin Efflux Carrier (AEC) Family
+TCDB superfamily:BART Superfamily
+OPM family: 
+OPM superfamily:
+ECOD family:
+ECOD superfamily:
+CATH family:
 PDB:
 N-Scaffold:1-2
 N-core:3-5
