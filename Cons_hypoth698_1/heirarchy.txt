@@ -1,6 +1,6 @@
 Topology:11H-Nin
-Fold-type:0 double reentrant fold-type
-CPAfold:CPA/AT:YeiH:YeiH1
+Fold-type:RHR fold
+CPAfold:CPA:Cons_hypoth698:
 Pfam:CL0064:PF03601:
 TCDB:CPA:2.A.98:
 OPM:
@@ -14,4 +14,3 @@ C-Scaffold:9-10
 C-core:11
 C-repeat:6-11
 KRbias-broken/KRbias-reentrant:
-
