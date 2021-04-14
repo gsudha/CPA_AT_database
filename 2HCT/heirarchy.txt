@@ -1,16 +1,20 @@
-Topology:13H-Nin
+Family:2HCT
 Fold-type:CPA-reentrant fold 
-2HCT:CPA-reentrant fold:13H-Nin:2HCT:CPA_AT:The 2-Hydroxycarboxylate Transporter (2-HCT) Family:
-Pfam::PF03390:
-TCDB::2.A.24:
-OPM:106:796:
-ECOD:Sodium dependent citrate symport:2HCT:
-CATH:::
+Topology:13H-Nin
+Pfam family:2HCT
+Pfam clan:CPA_AT 
+TCDB family:The 2-Hydroxycarboxylate Transporter (2-HCT) Family
+TCDB superfamily:
+OPM family:Hydroxycarboxylate transporter 
+OPM superfamily:Monovalent cation-proton antiporter
+ECOD superfamily:Sodium dependent citrate symport
+ECOD family:2HCT
+CATH family:
 PDB:5X9R(CITN_KLEPN),5A1S(G4BX92_SALIN)
 N-Scaffold:1-4
 N-core:5-7
-N-repeat:1-7
 C-Scaffold:8-10
 C-core:11-13
+N-repeat:1-7
 C-repeat:8-13
 KRbias-broken/KRbias-reentrant:-0.46/14.67
