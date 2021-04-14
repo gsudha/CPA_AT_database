@@ -1,6 +1,6 @@
 Topology:13H-Nin
-Fold-type:6 helical reentrant fold-type
-CPAfold:CPA/AT:2HCT:2HCT
+Fold-type:CPA-reentrant fold 
+CPA:2HCT:2HCT
 Pfam::PF03390:
 TCDB::2.A.24:
 OPM:106:796:
