@@ -1,16 +1,20 @@
-Topology:8H-Nin
-Fold-type:0 double reentrant fold-type
-CPAfold:CPA/AT:Lrg:LrgB
-Pfam::PF04172:
-TCDB::2.A.122:
-OPM:
-ECOD:
-CATH:
+Family:LrgB
+Fold-type:Reentrant-helix-reentrant fold
+Topology:
+Pfam family:LrgB
+Pfam clan:
+TCDB family:The LrgB/CidB Holin-like Glycolate/Glycerate Transporter (LrgB/CidB/GGT) Family
+TCDB superfamily:
+OPM family: 
+OPM superfamily:
+ECOD family:
+ECOD superfamily:
+CATH family:
 PDB:
 N-Scaffold:1-2
 N-core:3-8
-N-repeat:
 C-Scaffold:
 C-core:
+N-repeat:
 C-repeat:
 KRbias-broken/KRbias-reentrant:
