@@ -1,16 +1,20 @@
-Topology:13H-Nout
-Fold-type:0 double reentrant fold-type
-CPAfold:CPA/AT:Lrg:LrgAB
-Pfam:::
-TCDB:::
-OPM:::
-ECOD:::
-CATH:::
+Family:LrgAB
+Fold-type:Reentrant-helix-reentrant fold
+Topology:
+Pfam family:
+Pfam clan:
+TCDB family:
+TCDB superfamily:
+OPM family: 
+OPM superfamily:
+ECOD family:
+ECOD superfamily:
+CATH family:
 PDB:
-N-Scaffold:1-8
-N-core:9-13
-N-repeat:
+N-Scaffold:
+N-core:
 C-Scaffold:
 C-core:
+N-repeat:
 C-repeat:
 KRbias-broken/KRbias-reentrant:
