@@ -1,16 +1,20 @@
-Topology:3H-N??
-Fold-type:0 double reentrant fold-type
-CPAfold:CPA/AT:Lrg:LrgA
-Pfam::PF03788:
-TCDB::1.E.14:
-OPM:
-ECOD:
-CATH:
+Family:LrgA
+Fold-type:Reentrant-helix-reentrant fold
+Topology:
+Pfam family:LrgA
+Pfam clan:
+TCDB family:The CidA/LrgA Holin (CidA/LrgA Holin) Family
+TCDB superfamily:
+OPM family: 
+OPM superfamily:
+ECOD family:
+ECOD superfamily:
+CATH family:
 PDB:
-N-Scaffold:1-4
+N-Scaffold:
 N-core:
-N-repeat:
 C-Scaffold:
 C-core:
+N-repeat:
 C-repeat:
 KRbias-broken/KRbias-reentrant:
