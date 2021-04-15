@@ -1,17 +1,20 @@
+Family:Sbt_1
+Fold-type:BART-fold
 Topology:10H-Nout
-Fold-type:5 helical broken fold-type
-CPAfold:CPA/AT:Sbt_1:Sbt_1
-Pfam:CL0064:PF05982:
-TCDB::2.A.83:
-OPM:::
-ECOD:::
-CATH:::
+Pfam family:Sbt_1
+Pfam clan:CPA_AT
+TCDB family:The Na+-dependent Bicarbonate Transporter (SBT) Family 
+TCDB superfamily:
+OPM family: 
+OPM superfamily:
+ECOD family:
+ECOD superfamily:
+CATH family:
 PDB:
 N-Scaffold:1-2
 N-core:3-5
-N-repeat:1-5
 C-Scaffold:6-7
 C-core:8-10
+N-repeat:1-5
 C-repeat:6-10
 KRbias-broken/KRbias-reentrant:
-
