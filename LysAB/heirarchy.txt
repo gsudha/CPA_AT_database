@@ -1,17 +1,20 @@
-Topology:10H-Nout
-Fold-type:0 double reentrant fold-type
-CPAfold:CPA/AT:Lys_export:Lys9_export
-Pfam:::
-TCDB::2.A.124:
-OPM:::
-ECOD:::
-CATH:::
+Family:LysAB
+Fold-type:Reentrant-helix-reentrant fold
+Topology:
+Pfam family:Lys_export
+Pfam clan:CPA_AT
+TCDB family: The Lysine Exporter (LysO) Family
+TCDB superfamily:
+OPM family: 
+OPM superfamily:
+ECOD family:
+ECOD superfamily:
+CATH family:
 PDB:
-N-Scaffold:4-5
-N-core:6-10
+N-Scaffold:
+N-core:
+C-Scaffold:
+C-core:
 N-repeat:
-C-Scaffold:1-2
-C-core:3
 C-repeat:
 KRbias-broken/KRbias-reentrant:
-
