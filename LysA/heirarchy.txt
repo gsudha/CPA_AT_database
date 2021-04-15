@@ -1,18 +1,20 @@
-Topology:3H-Nout
-Fold-type:0 double reentrant fold-type
-CPAfold:CPA/AT:Lys_export:Lys3_export
-Pfam:::
-TCDB:::
-OPM:::
-ECOD:::
-CATH:::
+Family:LysA
+Fold-type:Reentrant-helix-reentrant fold
+Topology:
+Pfam family:
+Pfam clan:
+TCDB family:
+TCDB superfamily:
+OPM family: 
+OPM superfamily:
+ECOD family:
+ECOD superfamily:
+CATH family:
 PDB:
 N-Scaffold:
 N-core:
-N-repeat:
 C-Scaffold:1-2
 C-core:3
+N-repeat:
 C-repeat:
 KRbias-broken/KRbias-reentrant:
-
-
