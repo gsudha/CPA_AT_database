@@ -13,8 +13,8 @@ CATH family:
 PDB:
 N-Scaffold:1-2
 N-core:3-4
-C-Scaffold:8-11
-C-core:5-7
+C-Scaffold:10-13
+C-core:5-9
 N-repeat:
 C-repeat:
 KRbias-broken/KRbias-reentrant:
