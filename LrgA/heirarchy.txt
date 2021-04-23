@@ -11,8 +11,8 @@ ECOD family:
 ECOD superfamily:
 CATH family:
 PDB:
-N-Scaffold:
-N-core:
+N-Scaffold:1-3
+N-core:4
 C-Scaffold:
 C-core:
 N-repeat:
