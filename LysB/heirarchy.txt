@@ -1,6 +1,6 @@
 Family: LysB
 Fold-type:Reentrant-helix-reentrant fold
-Topology:
+Topology:7H-Nin
 Pfam family:
 Pfam clan:
 TCDB family:
