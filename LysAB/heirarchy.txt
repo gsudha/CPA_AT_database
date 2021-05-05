@@ -1,6 +1,6 @@
 Family:LysAB
 Fold-type:Reentrant-helix-reentrant fold
-Topology:
+Topology:10H-Nout
 Pfam family:Lys_export
 Pfam clan:CPA_AT
 TCDB family: The Lysine Exporter (LysO) Family
