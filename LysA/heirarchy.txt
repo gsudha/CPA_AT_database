@@ -11,10 +11,10 @@ ECOD family:
 ECOD superfamily:
 CATH family:
 PDB:
-N-Scaffold:
-N-core:
-C-Scaffold:1-2
-C-core:3
+N-Scaffold:1-2
+N-core:3
+C-Scaffold:
+C-core:
 N-repeat:
 C-repeat:
 KRbias-broken/KRbias-reentrant:
