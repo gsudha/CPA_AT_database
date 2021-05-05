@@ -1,6 +1,6 @@
 Family:LysA
 Fold-type:Reentrant-helix-reentrant fold
-Topology:
+Topology:3H-Nout
 Pfam family:
 Pfam clan:
 TCDB family:
