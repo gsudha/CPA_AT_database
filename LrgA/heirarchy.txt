@@ -1,6 +1,6 @@
 Family:LrgA
 Fold-type:Reentrant-helix-reentrant fold
-Topology:
+Topology:4H-Nin
 Pfam family:LrgA
 Pfam clan:
 TCDB family:The CidA/LrgA Holin (CidA/LrgA Holin) Family
