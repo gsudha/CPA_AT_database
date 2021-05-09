@@ -1,6 +1,6 @@
 Family:LrgB
 Fold-type:Reentrant-helix-reentrant fold
-Topology:
+Topology:8H-Nout
 Pfam family:LrgB
 Pfam clan:
 TCDB family:The LrgB/CidB Holin-like Glycolate/Glycerate Transporter (LrgB/CidB/GGT) Family
