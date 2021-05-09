@@ -1,6 +1,6 @@
 Family:LrgAB
 Fold-type:Reentrant-helix-reentrant fold
-Topology:
+Topology:13H-Nin
 Pfam family:
 Pfam clan:
 TCDB family:
