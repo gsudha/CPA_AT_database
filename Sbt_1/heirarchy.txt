@@ -1,5 +1,5 @@
 Family:Sbt_1
-Fold-type:BART-fold
+Fold-type:BART fold-type
 Topology:10H-Nout
 Pfam family:Sbt_1
 Pfam clan:CPA_AT
