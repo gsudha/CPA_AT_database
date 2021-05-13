@@ -1,5 +1,5 @@
 Family:Mem_trans
-Fold-type:BART-fold
+Fold-type:BART fold-type
 Topology:10H-Nout 
 Pfam family:Mem_trans
 Pfam clan:CPA_AT
