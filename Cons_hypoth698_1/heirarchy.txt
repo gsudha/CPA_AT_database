@@ -1,5 +1,5 @@
 Family:PSE_1
-Fold-type:Reentrant-helix-reentrant fold 
+Fold-type:Reentrant-helix-reentrant fold-type
 Topology:11H-Nin
 Pfam family:Cons_hypoth698
 Pfam clan:CPA_AT
