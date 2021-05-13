@@ -1,5 +1,5 @@
 Family:AbrB
-Fold-type:CPA-reentrant fold 
+Fold-type:CPA-reentrant fold-type
 Topology:12H-Nin
 Pfam family:AbrB
 Pfam clan:Membrane_trans 
