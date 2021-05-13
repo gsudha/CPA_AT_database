@@ -1,9 +1,9 @@
 Family:Na_H_Exchanger_1
-Fold-type:CPA-broken-fold
+Fold-type:CPA-broken fold-type
 Topology:13H-Nout 
 Pfam family:Na_H_Exchanger
 Pfam clan:CPA_AT
-TCDB family:The Monovalent Cation:Proton Antiporter-1 (CPA1) Family
+TCDB family:The Monovalent Cation Proton Antiporter-1 (CPA1) Family
 TCDB superfamily:CPA Superfamily
 OPM family: Sodium-proton antiporter_1
 OPM superfamily:Monovalent cation-proton antiporter
