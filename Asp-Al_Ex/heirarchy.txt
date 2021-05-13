@@ -3,7 +3,7 @@ Fold-type:CPA-reentrant fold
 Topology:12H-Nout 
 Pfam family:Asp-Al_Ex
 Pfam clan:CPA_AT 
-TCDB family:The Aspartate:Alanine Exchanger (AAEx) Family
+TCDB family:The Aspartate Alanine Exchanger (AAEx) Family
 TCDB superfamily:CPA Superfamily
 OPM family:
 OPM superfamily:
