@@ -1,5 +1,5 @@
 Family: LysB
-Fold-type:Reentrant-helix-reentrant fold
+Fold-type:Reentrant-helix-reentrant fold-type
 Topology:7H-Nin
 Pfam family:
 Pfam clan:
