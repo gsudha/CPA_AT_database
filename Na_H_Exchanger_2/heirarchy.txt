@@ -1,9 +1,9 @@
 Family:Na_H_Exchanger_2
-Fold-type:CPA-broken-fold
+Fold-type:CPA-broken fold-type
 Topology:14H-Nin 
 Pfam family:
 Pfam clan:
-TCDB family: The Monovalent Cation:Proton Antiporter-2 (CPA2) Family
+TCDB family:The Monovalent Cation Proton Antiporter-2 (CPA2) Family
 TCDB superfamily:CPA Superfamily
 OPM family: 
 OPM superfamily:
