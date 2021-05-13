@@ -1,5 +1,5 @@
 Family:DUF819
-Fold-type:CPA-reentrant fold 
+Fold-type:CPA-reentrant fold-type
 Topology:12H-Nout 
 Pfam family:DUF819
 Pfam clan:CPA_AT
