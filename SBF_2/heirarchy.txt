@@ -1,5 +1,5 @@
 Family:SBF_2
-Fold-type:BART-fold
+Fold-type:BART fold-type
 Topology:9H-Nout 
 Pfam family:
 Pfam clan:
