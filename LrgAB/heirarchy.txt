@@ -1,5 +1,5 @@
 Family:LrgAB
-Fold-type:Reentrant-helix-reentrant fold
+Fold-type:Reentrant-helix-reentrant fold-type
 Topology:13H-Nin
 Pfam family:
 Pfam clan:
