@@ -1,5 +1,5 @@
 Family:LysAB
-Fold-type:Reentrant-helix-reentrant fold
+Fold-type:Reentrant-helix-reentrant fold-type
 Topology:10H-Nout
 Pfam family:Lys_export
 Pfam clan:CPA_AT
