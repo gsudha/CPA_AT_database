@@ -1,9 +1,9 @@
 Family:Na_H_antiport_1
-Fold-type:CPA-broken-fold
+Fold-type:CPA-broken fold-type
 Topology:12H-Nin 
 Pfam family:Na_H_antiport_1
 Pfam clan:CPA_AT
-TCDB family: The NhaA Na+:H+Antiporter (NhaA) Family
+TCDB family: The NhaA Na+ H+Antiporter (NhaA) Family
 TCDB superfamily:
 OPM family:Sodium-proton antiporter NhaA
 OPM superfamily:Monovalent cation-proton antiporter
