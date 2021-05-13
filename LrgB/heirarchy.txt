@@ -1,5 +1,5 @@
 Family:LrgB
-Fold-type:Reentrant-helix-reentrant fold
+Fold-type:Reentrant-helix-reentrant fold-type
 Topology:8H-Nout
 Pfam family:LrgB
 Pfam clan:
