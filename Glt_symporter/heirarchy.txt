@@ -1,9 +1,9 @@
 Family:Glt_symporter
-Fold-type: CPA-reentrant fold
+Fold-type: CPA-reentrant fold-type
 Topology:12H-Nout 
 Pfam family:Glt_symporter
 Pfam clan:CPA_AT
-TCDB family:The Glutamate:Na+ Symporter (ESS) Family
+TCDB family:The Glutamate Na+ Symporter (ESS) Family
 TCDB superfamily:CPA Superfamily
 OPM family: 
 OPM superfamily:
