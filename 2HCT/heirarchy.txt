@@ -1,9 +1,10 @@
 Family:2HCT
-Fold-type:CPA-reentrant fold 
+Fold-type:CPA-reentrant fold-type
 Topology:13H-Nin
 Pfam family:2HCT
 Pfam clan:CPA_AT 
 TCDB family:The 2-Hydroxycarboxylate Transporter (2-HCT) Family
+TCDB family code:2.A.24
 TCDB superfamily:
 OPM family:Hydroxycarboxylate transporter 
 OPM superfamily:Monovalent cation-proton antiporter
