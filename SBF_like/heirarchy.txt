@@ -1,9 +1,9 @@
 Family:SBF_like
-Fold-type:BART-fold
+Fold-type:BART fold-type
 Topology:10H-Nin 
 Pfam family:SBF_like
 Pfam clan:CPA_AT
-TCDB family:Bile Acid: Na+ Symporter -BASS Family
+TCDB family:Bile Acid Na+ Symporter -BASS Family
 TCDB superfamily:CPA Superfamily
 OPM family: 
 OPM superfamily:
