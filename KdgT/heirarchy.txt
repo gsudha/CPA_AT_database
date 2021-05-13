@@ -1,5 +1,5 @@
 Family:KdgT
-Fold-type:BART-fold-type
+Fold-type:BART fold-type
 Topology:10H-Nin 
 Pfam family:KdgT
 Pfam clan:CPA_AT
