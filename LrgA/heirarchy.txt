@@ -1,5 +1,5 @@
 Family:LrgA
-Fold-type:Reentrant-helix-reentrant fold
+Fold-type:Reentrant-helix-reentrant fold-type
 Topology:4H-Nin
 Pfam family:LrgA
 Pfam clan:
