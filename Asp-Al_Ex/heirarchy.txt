@@ -1,5 +1,5 @@
 Family:Asp-Al_Ex
-Fold-type:CPA-reentrant fold 
+Fold-type:CPA-reentrant fold-type
 Topology:12H-Nout 
 Pfam family:Asp-Al_Ex
 Pfam clan:CPA_AT 
