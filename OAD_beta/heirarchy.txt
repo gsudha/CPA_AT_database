@@ -1,5 +1,5 @@
 Family:OAD_beta
-Fold-type:CPA-reentrant fold
+Fold-type:CPA-reentrant fold-type
 Topology:12H-Nout
 Pfam family:OAD_beta
 Pfam clan:CPA_AT
