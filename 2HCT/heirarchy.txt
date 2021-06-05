@@ -13,8 +13,8 @@ CATH family:
 PDB:5X9R(CITN_KLEPN),5A1S(G4BX92_SALIN)
 N-Scaffold:1-4
 N-core:5-7
+N-repeat:1-7
 C-Scaffold:8-10
 C-core:11-13
-N-repeat:1-7
 C-repeat:8-13
 KRbias-broken/KRbias-reentrant:-0.46/14.67
