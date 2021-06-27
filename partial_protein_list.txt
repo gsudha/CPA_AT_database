@@ -6,3 +6,7 @@ LysAB
 LysB
 OAD_beta
 Sbt_1
+PSE_1
+PSE_2
+Cons_hypoth698_1
+Cons_hypoth698_2
